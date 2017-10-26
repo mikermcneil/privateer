@@ -1,0 +1,50 @@
+{
+  "name": "machinepack-bitfinex",
+  "version": "0.0.0",
+  "description": "Integrate with the Bitfinex API for crypto-currency trading.",
+  "scripts": {
+    "test": "npm run lint && npm run custom-tests",
+    "custom-tests": "node ./node_modules/mocha/bin/mocha -R spec",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
+  },
+  "keywords": [
+    "payments",
+    "crypto",
+    "api",
+    "cloud",
+    "bitfinex",
+    "etc",
+    "financial",
+    "fintech",
+    "machines",
+    "machinepack"
+  ],
+  "author": "The Sails Company",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^15.0.0-2",
+    "machinepack-http": "^4.0.0-0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sailshq/machinepack-bitfinex.git"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "mocha": "3.0.2"
+  },
+  "machinepack": {
+    "friendlyName": "Bitfinex",
+    "machineDir": "lib/",
+    "machines": [
+      "set-global-defaults",
+      "send-authenticated-request",
+      "create-each-order",
+      "cancel-each-order"
+    ],
+    "testsUrl": "https://travis-ci.org/sailshq/machinepack-bitfinex"
+  },
+  "engines": {
+    "node": "8"
+  }
+}
