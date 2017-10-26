@@ -40,7 +40,8 @@
       "set-global-defaults",
       "send-authenticated-request",
       "create-each-order",
-      "cancel-each-order"
+      "cancel-each-order",
+      "list-holdings"
     ],
     "testsUrl": "https://travis-ci.org/sailshq/machinepack-bitfinex"
   },
