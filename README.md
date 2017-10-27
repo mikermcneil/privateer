@@ -1,6 +1,6 @@
 # privateer
 
-Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaScript/Node.js/Sails.js app.  Supports Bitcoin, Ethereum, and more.
+Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaScript / Node.js / Sails.js app.  Supports Bitcoin, Ethereum, and more.
 
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/privateer.svg)](http://badge.fury.io/js/privateer)
 
@@ -17,13 +17,15 @@ Then require it from the actions or helpers in your Sails app, a command-line sc
 To see all available exchanges:
 
 ```js
-privateer
+require('privateer');
 ```
 
 To see all available methods:
 
 ```js
-privateer('bitfinex')
+var privateer = require('privateer');
+
+privateer('bitfinex');
 ```
 
 
@@ -31,8 +33,8 @@ privateer('bitfinex')
 
 ```js
 privateer('bitfinex').setGlobalDefaults({
-  apiKey: '<YOUR API KEY>',
-  secret: '<YOUR API SECRET>',
+  apiKey: '«YOUR API KEY»',
+  secret: '«YOUR API SECRET»',
 }).now();
 
 // …
