@@ -1,50 +1,35 @@
 {
-  "name": "machinepack-bitfinex",
+  "name": "privateer",
   "version": "0.0.0",
-  "description": "Integrate with the Bitfinex API for crypto-currency trading.",
+  "description": "Integrate with exchanges like Bitfinex for crypto-currency trading.",
+  "main": "./lib/privateer.js",
   "scripts": {
     "test": "npm run lint && npm run custom-tests",
     "custom-tests": "node ./node_modules/mocha/bin/mocha -R spec",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
   },
   "keywords": [
-    "payments",
     "crypto",
-    "api",
-    "cloud",
     "bitfinex",
-    "etc",
+    "cryptocurrency",
+    "forex",
     "financial",
     "fintech",
-    "machines",
-    "machinepack"
+    "sails.js"
   ],
   "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
-    "machine": "^15.0.0-2",
+    "machine": "^15.0.0-5",
     "machinepack-http": "^4.0.0-0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sailshq/machinepack-bitfinex.git"
+    "url": "git@github.com:sailshq/privateer.git"
   },
   "devDependencies": {
     "eslint": "3.19.0",
     "mocha": "3.0.2"
-  },
-  "machinepack": {
-    "friendlyName": "Bitfinex",
-    "machineDir": "lib/",
-    "machines": [
-      "set-global-defaults",
-      "send-authenticated-request",
-      "create-each-order",
-      "cancel-each-order",
-      "list-holdings",
-      "list-active-orders"
-    ],
-    "testsUrl": "https://travis-ci.org/sailshq/machinepack-bitfinex"
   },
   "engines": {
     "node": "8"
