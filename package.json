@@ -41,7 +41,8 @@
       "send-authenticated-request",
       "create-each-order",
       "cancel-each-order",
-      "list-holdings"
+      "list-holdings",
+      "list-active-orders"
     ],
     "testsUrl": "https://travis-ci.org/sailshq/machinepack-bitfinex"
   },
