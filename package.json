@@ -4,6 +4,7 @@
   "description": "Integrate with exchanges like Bitfinex for crypto-currency trading.",
   "main": "./lib/privateer.js",
   "scripts": {
+    "sandbox": "node -i -e '_ = require(\"@sailshq/lodash\"); global[require(\"./package.json\").name] = require(\"./\"); console.log(\"\\n\\n\\n\\n--\");'",
     "test": "npm run lint && npm run custom-tests",
     "custom-tests": "node ./node_modules/mocha/bin/mocha -R spec",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
@@ -22,7 +23,7 @@
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
     "ccxt": "^1.9.346",
-    "machine": "^15.0.0-5",
+    "machine": "^15.0.0-11",
     "machinepack-http": "^4.0.0-0"
   },
   "repository": {
