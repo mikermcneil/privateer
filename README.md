@@ -2,6 +2,14 @@
 
 Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaScript / Node.js / Sails.js app.  Supports Bitcoin, Ethereum, and more.
 
+> **WARNING**
+>
+> This package is a work in progress.  Its internals are currently in the midst of development, and parts of it are still only stubs.
+>
+> As of the time of writing this note, you can find the latest abstract method definitions [here](https://github.com/mikermcneil/privateer/tree/master/lib/abstract-interface/methods).
+>
+> -@mikermcneil, Nov 7, 2017
+
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/privateer.svg)](http://badge.fury.io/js/privateer)
 
 To install this package, run:
