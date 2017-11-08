@@ -2,28 +2,19 @@
 
 Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaScript / Node.js / Sails.js app.  Supports Bitcoin, Ethereum, and more.
 
-> **WARNING**
->
-> This package is a work in progress.  Its interface is currently in the midst of an overhaul.
->
-> As of the time of writing this note, you can find the latest abstract method definitions [here](https://github.com/mikermcneil/privateer/tree/05dfea49344d5b21ddf2a58732687d151d731dff/lib/abstract-interface/methods).
->
-> (This is follows the general conventions established [here](https://github.com/node-machine/driver-interface).)
->
-> -@mikermcneil, Nov 2, 2017
-
-
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/privateer.svg)](http://badge.fury.io/js/privateer)
 
 To install this package, run:
 
 ```bash
-$ npm install privateer --save
+$ npm install privateer
 ```
 
 Then require it from the actions or helpers in your Sails app, a command-line script, or any other Node.js module.
 
 ## Usage
+
+privateer supports `await`, with fallback support for callbacks (`.exec()`), and promise-chaining (`.then()`) via the [parley](https://npmjs.com/package/parley) interface (an extension of bluebird).  Other than the special case of `.configure()`, all exchange methods are parley Callables, which means they can use Deferreds that support `.intercept()`, `.tolerate()`, `.toPromise()`, `.now()`, and `.log()`.
 
 ### Exchanges
 
@@ -39,7 +30,7 @@ require('privateer');
 Set credentials as global defaults:
 
 ```js
-privateer('bitfinex').configure({
+privateer('gdax').configure({
   apiKey: '«YOUR API KEY»',
   secret: '«YOUR API SECRET»',
   password: '«YOUR GDAX PASSPHRASE»',
@@ -51,7 +42,7 @@ privateer('bitfinex').configure({
 To see all available methods:
 
 ```js
-privateer('bitfinex');
+privateer('gdax');
 ```
 
 
