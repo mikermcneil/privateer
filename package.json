@@ -22,9 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
-    "ccxt": "^1.9.346",
-    "machine": "^15.0.0-11",
-    "machinepack-http": "^4.0.0-0"
+    "ccxt": "1.9.346",
+    "machine": "^15.0.0-11"
   },
   "repository": {
     "type": "git",
