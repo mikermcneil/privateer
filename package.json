@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sailshq/privateer.git"
+    "url": "git@github.com:mikermcneil/privateer.git"
   },
   "devDependencies": {
     "eslint": "3.19.0",
