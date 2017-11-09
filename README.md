@@ -35,7 +35,7 @@ require('privateer');
 
 ### Configuration
 
-Set credentials as global defaults:
+Set credentials as global defaults for a particular exchange:
 
 ```js
 privateer('gdax').configure({
@@ -62,7 +62,7 @@ await privateer('gdax').cancelEachOrder({
 });
 ```
 
-[Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CANCEL_EACH_ORDER.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CANCEL_EACH_ORDER.js)
 
 
 
@@ -82,7 +82,7 @@ var newOrders = await privateer('gdax').createEachOrder({
 // ]
 ```
 
-[Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CREATE_EACH_ORDER.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CREATE_EACH_ORDER.js)
 
 
 
@@ -100,7 +100,7 @@ var activeOrders = await privateer('gdax').getActiveOrders();
 // ]
 ```
 
-[Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_ACTIVE_ORDERS.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_ACTIVE_ORDERS.js)
 
 
 
@@ -126,7 +126,7 @@ var rates = await privateer('gdax').getExchangeRates();
 // }
 ```
 
-[Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_EXCHANGE_RATES.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_EXCHANGE_RATES.js)
 
 
 
@@ -142,9 +142,26 @@ var holdings = await privateer('bitfinex').getHoldings();
 // }
 ```
 
-[Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_HOLDINGS.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_HOLDINGS.js)
 
 
+## Other stuff
+
+For convenience, `privateer` exposes the underlying ccxt library as `.ccxt`.
+
+```js
+require('privateer').ccxt
+
+// e.g.
+// { version: '1.9.346',
+//   Exchange: { [Function: Exchange] ccxtVersion: '1.9.346' },
+//   exchanges:
+//    [ '_1broker',
+//
+// …and so on
+```
+
+> See http://npmjs.com/package/ccxt for more information.
 
 
 
