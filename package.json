@@ -23,7 +23,8 @@
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
     "ccxt": "1.9.346",
-    "machine": "^15.0.0-11"
+    "machine": "^15.0.0-11",
+    "semver": "5.4.1"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,6 @@
     "mocha": "3.0.2"
   },
   "engines": {
-    "node": "8"
+    "node": ">=7.9"
   }
 }
