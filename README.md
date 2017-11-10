@@ -71,14 +71,14 @@ await privateer('gdax').cancelEachOrder({
 ```js
 var newOrders = await privateer('gdax').createEachOrder({
   orders: [
-    { operation: 'btc»usd', sell: '0.000002' },
-    { operation: 'eth»ltc', sell: '2.45' }, …
+    { operation: 'BTC»USD', sell: '0.000002' },
+    { operation: 'ETH»LTC', sell: '2.45' }, …
   ]
 });
 // order summaries; e.g.
 // [
-//   { id: '448383729', operation: 'btc»usd', sell: '0.000002' },
-//   { id: '448383891', operation: 'eth»ltc', sell: '2.45' }, …
+//   { id: '448383729', operation: 'BTC»USD', sell: '0.000002' },
+//   { id: '448383891', operation: 'ETH»LTC', sell: '2.45' }, …
 // ]
 ```
 
@@ -94,7 +94,7 @@ var activeOrders = await privateer('gdax').getActiveOrders();
 // [
 //   {
 //     id: '448383729',
-//     operation: 'btc»usd',
+//     operation: 'BTC»USD',
 //     sell: '0.02'
 //   }, …
 // ]
@@ -110,18 +110,18 @@ var activeOrders = await privateer('gdax').getActiveOrders();
 var rates = await privateer('gdax').getExchangeRates();
 // e.g.
 // {
-//   btc: {
-//     eth: '20.9264910962',
-//     usd: '6371.03',
-//     ltc: '120.918984281'
+//   BTC: {
+//     ETH: '20.9264910962',
+//     USD: '6371.03',
+//     LTC: '120.918984281'
 //   },
-//   usd: {
-//     btc: '0.00015696049',
-//     eth: '0.00328040939'
+//   USD: {
+//     BTC: '0.00015696049',
+//     ETH: '0.00328040939'
 //   },
-//   ltc: {
-//     btc: '0.00827',
-//     usd: '54.60'
+//   LTC: {
+//     BTC: '0.00827',
+//     USD: '54.60'
 //   }
 // }
 ```
@@ -136,9 +136,9 @@ var rates = await privateer('gdax').getExchangeRates();
 var holdings = await privateer('bitfinex').getHoldings();
 // e.g.
 // {
-//   btc: '0.000053',
-//   eth: '13.283523',
-//   usd: '55.03'
+//   BTC: '0.000053',
+//   ETH: '13.283523',
+//   USD: '55.03'
 // }
 ```
 
