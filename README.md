@@ -71,14 +71,14 @@ await privateer('gdax').cancelEachOrder({
 ```js
 var newOrders = await privateer('gdax').createEachOrder({
   orders: [
-    { operation: 'BTC»USD', sell: '0.000002' },
-    { operation: 'ETH»LTC', sell: '2.45' }, …
+    { operation: 'BTC»USD', subtract: '0.000002' },
+    { operation: 'ETH»LTC', subtract: '2.45' }, …
   ]
 });
 // order summaries; e.g.
 // [
-//   { id: '448383729', operation: 'BTC»USD', sell: '0.000002' },
-//   { id: '448383891', operation: 'ETH»LTC', sell: '2.45' }, …
+//   { id: '448383729', operation: 'BTC»USD', subtract: '0.000002' },
+//   { id: '448383891', operation: 'ETH»LTC', subtract: '2.45' }, …
 // ]
 ```
 
@@ -95,7 +95,7 @@ var activeOrders = await privateer('gdax').getActiveOrders();
 //   {
 //     id: '448383729',
 //     operation: 'BTC»USD',
-//     sell: '0.02'
+//     subtract: '0.02'
 //   }, …
 // ]
 ```
