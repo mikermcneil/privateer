@@ -6,7 +6,7 @@ Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaS
 >
 > This package is a work in progress.  Its internals are currently in the midst of development, and parts of it are still only stubs.
 >
-> As of the time of writing this note, you can find the latest abstract method definitions [here](https://github.com/mikermcneil/privateer/tree/master/lib/abstract-interface/methods).
+> As of the time of writing this note, you can find the latest abstract method definitions [here](https://github.com/mikermcneil/privateer/tree/master/lib/abstract-interface-for-exchanges/methods).
 >
 > -@mikermcneil, Nov 7, 2017
 
@@ -62,7 +62,7 @@ await privateer('gdax').cancelEachOrder({
 });
 ```
 
-> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CANCEL_EACH_ORDER.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface-for-exchanges/methods/CANCEL_EACH_ORDER.js)
 
 
 
@@ -82,7 +82,7 @@ var newOrders = await privateer('gdax').createEachOrder({
 // ]
 ```
 
-> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/CREATE_EACH_ORDER.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface-for-exchanges/methods/CREATE_EACH_ORDER.js)
 
 
 
@@ -100,7 +100,7 @@ var activeOrders = await privateer('gdax').getActiveOrders();
 // ]
 ```
 
-> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_ACTIVE_ORDERS.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface-for-exchanges/methods/GET_ACTIVE_ORDERS.js)
 
 
 
@@ -126,7 +126,7 @@ var rates = await privateer('gdax').getExchangeRates();
 // }
 ```
 
-> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_EXCHANGE_RATES.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface-for-exchanges/methods/GET_EXCHANGE_RATES.js)
 
 
 
@@ -142,7 +142,7 @@ var holdings = await privateer('bitfinex').getHoldings();
 // }
 ```
 
-> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface/methods/GET_HOLDINGS.js)
+> [Docs](https://github.com/mikermcneil/privateer/blob/master/lib/abstract-interface-for-exchanges/methods/GET_HOLDINGS.js)
 
 
 ## Other stuff
