@@ -2,6 +2,10 @@
 
 Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaScript / Node.js / Sails.js app.  Supports Bitcoin, Ethereum, and more.
 
+![Selling fiat currency / cryptocurrency](https://user-images.githubusercontent.com/618009/32758679-3a88ac92-c8ab-11e7-9d94-0891afcc22f4.png)
+![Indirectly selling fiat currency / cryptocurrency by buying on a reciprocal market](https://user-images.githubusercontent.com/618009/32758667-280b1a78-c8ab-11e7-8e13-c00d28107f9f.png)
+
+
 > **WARNING**
 >
 > This package is a work in progress.  Its internals are currently in the midst of development, and parts of it are still only stubs.
