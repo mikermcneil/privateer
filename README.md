@@ -43,9 +43,9 @@ Set credentials as global defaults for a particular exchange:
 
 ```js
 privateer('gdax').configure({
-  apiKey: '«YOUR API KEY»',
-  secret: '«YOUR API SECRET»',
-  password: '«YOUR GDAX PASSPHRASE»',
+  apiKey: '«YOUR API KEY->',
+  secret: '«YOUR API SECRET->',
+  password: '«YOUR GDAX PASSPHRASE->',
 });
 ```
 
