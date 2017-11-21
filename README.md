@@ -63,10 +63,12 @@ privateer('gdax');
 
 ## Other stuff
 
-For convenience, `privateer` exposes the underlying ccxt library as `.ccxt`.
+For convenience, `privateer` exposes the underlying ccxt library as `._ccxt`.
+
+> **WARNING:** The underlying version of ccxt might change at any time between major (or even minor) releases of privateer.
 
 ```js
-require('privateer').ccxt
+require('privateer')._ccxt
 
 // e.g.
 // { version: '1.9.346',
@@ -78,6 +80,12 @@ require('privateer').ccxt
 ```
 
 > See http://npmjs.com/package/ccxt for more information.
+
+Similarly, privateer exposes the exchange-specific ccxt dao as `_ccxtExchange`:
+
+```js
+require('privateer')('bittrex')._ccxtExchange
+```
 
 
 
