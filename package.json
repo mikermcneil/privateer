@@ -27,6 +27,7 @@
     "flaverr": "^1.8.0",
     "machine": "^15.0.0-11",
     "machinepack-http": "^4.0.0-2",
+    "parley": "^3.3.2",
     "semver": "5.4.1"
   },
   "repository": {
