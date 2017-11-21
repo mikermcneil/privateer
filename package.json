@@ -1,6 +1,6 @@
 {
   "name": "privateer",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "Integrate with exchanges like Bitfinex for crypto-currency trading.",
   "main": "./lib/privateer.js",
   "scripts": {
