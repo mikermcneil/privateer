@@ -35,7 +35,7 @@
     "url": "git@github.com:mikermcneil/privateer.git"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "4.11.0",
     "mocha": "3.0.2"
   },
   "engines": {
