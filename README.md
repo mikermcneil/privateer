@@ -8,11 +8,11 @@ Integrate with exchanges like Bitfinex for crypto-currency trading in your JavaS
 
 > **WARNING**
 >
-> This package is a work in progress.  Its internals are currently in the midst of development, and parts of it are still only stubs.
+> This package does not yet necessarily use IEEE-floating-point-safe math yet (see TODOs in the code).  Pull requests welcome!
 >
 > As of the time of writing this note, you can find the latest abstract method definitions [here](https://github.com/mikermcneil/privateer/tree/master/lib/abstract-interface-for-exchanges/methods).
 >
-> -@mikermcneil, Nov 7, 2017
+> -@mikermcneil, May 11, 2018
 
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/privateer.svg)](http://badge.fury.io/js/privateer)
 
@@ -99,8 +99,8 @@ Node.js v8.x and up.
 
 ## License
 
-This package is available under the **________ license**.
+This package is available under the **MIT license**.
 
-Copyright &copy; 2017 [Mike McNeil](https://twitter.com/mikermcneil), [St. Nicholas Crumrine](https://github.com/uncletammy), [Sails Co.](https://sailsjs.com/about)
+Copyright &copy; 2017-present [Mike McNeil](https://twitter.com/mikermcneil), [St. Nicholas Crumrine](https://github.com/uncletammy), [Sails Co.](https://sailsjs.com/about)
 
 
